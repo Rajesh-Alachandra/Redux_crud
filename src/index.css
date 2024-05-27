@@ -1,0 +1,99 @@
+/* index.css */
+
+/* Background gradient */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #025334, #26c2a0);
+}
+
+.App {
+    text-align: center;
+    padding: 40px 20px;
+    /* Increased padding for better spacing */
+    color: #fff;
+    /* Text color */
+}
+
+h1 {
+    margin-bottom: 30px;
+    /* Increased margin for better separation */
+}
+
+.forms {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    gap: 20px;
+    /* Added gap between forms for better spacing */
+}
+
+.lists {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* Added gap between lists for better spacing */
+}
+
+
+input[type="text"],
+select {
+    width: calc(100% - 20px);
+    /* Adjusted width to account for padding */
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+    /* Adjusted width to account for padding */
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    /* Submit button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    /* Hover color */
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    /* List item background with transparency */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+/* Product and Item specific styles */
+.product-container,
+.item-container {
+    width: calc(50% - 20px);
+    /* Adjusted width to account for padding and margin */
+    min-width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Container background with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Box shadow for a bit of depth */
+}
+
+.product-container h2,
+.item-container h2 {
+    margin-bottom: 10px;
+}
