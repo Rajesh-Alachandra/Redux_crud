@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <h1>CRUD App with Redux Toolkit and Axios</h1>
+      <h6 className='' style={{ marginBottom: 20 }}>json-server --watch db.json --port 5000</h6>
       <div className="forms">
         <ProductForm currentProduct={currentProduct} setCurrentProduct={setCurrentProduct} />
         <ItemForm currentItem={currentItem} setCurrentItem={setCurrentItem} />
