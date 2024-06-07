@@ -4,6 +4,7 @@ import ProductForm from './App/Components/product/ProductForm';
 import "./index.css"
 import ItemForm from './App/Components/Item/ItemForm';
 import ItemList from './App/Components/Item/ItemList';
+import Holidays from './App/Pages/Holidays';
 
 function App() {
   const [currentProduct, setCurrentProduct] = useState(null);
@@ -20,6 +21,11 @@ function App() {
       <div className="lists">
         <ProductList setCurrentProduct={setCurrentProduct} />
         <ItemList setCurrentItem={setCurrentItem} />
+      </div>
+
+      <div style={{ color: "black" }}>
+        <h1>Holidays</h1>
+        <Holidays />
       </div>
     </div>
   );
